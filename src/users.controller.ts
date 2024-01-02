@@ -1,15 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Delete,
-  Put,
-  Patch,
-  Req,
-  Res,
-  HttpCode,
-  HttpStatus,
-} from '@nestjs/common';
+import { Controller, Get, Req, Res, HttpCode } from '@nestjs/common';
 import { Request, Response } from 'express';
 @Controller('/users')
 export class UsersController {

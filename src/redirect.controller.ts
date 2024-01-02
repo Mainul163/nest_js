@@ -17,6 +17,7 @@ export class RedirectController {
   @HttpCode(301)
   //   @HttpCode(HttpStatus.OK)
   getProfile(@Req() req: Request, @Res({ passthrough: true }) res: Response) {
+    res.status(200);
     return {
       name: 'mainul',
     };
